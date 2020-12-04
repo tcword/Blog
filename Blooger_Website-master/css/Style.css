@@ -1,0 +1,1741 @@
+@import url("../css/fonts.css");
+@import url("http://fonts.cdnfonts.com/css/kaushan-script");
+
+html,
+body {
+  margin: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background: whitesmoke;
+  cursor: url('https://staticdelivery.nexusmods.com/mods/3174/images/thumbnails/85/85-1586012256-2031460074.png'), auto;
+}
+
+:root {
+  /*      Theme colors        */
+  --text-gray: #3f4954;
+  --text-light: #686666da;
+  --bg-color: #0f0f0f;
+  --white: #ffffff;
+  --midnight: #104f55;
+
+  /* gradient color   */
+  --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+  /*      theme font-family   */
+  --Abel: "Abel", cursive;
+  --Anton: "Anton", cursive;
+  --Josefin: "Josefin", cursive;
+  --Lexend: "Lexend", cursive;
+  --Livvic: "Livvic", cursive;
+  --The_Skinny: "The Skinny", cursive;
+  --Bebas_Neue: "Bebas Neue Book", cursive;
+  --Bebas_Neue: "Bebas Neue Light", cursive;
+}
+
+/* ---------------- Global Classes ---------------*/
+
+a {
+  text-decoration: none;
+  /* color: var(--text-gray); */
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: var(--Lexend);
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-family: var(--Lexend);
+}
+
+h3 {
+  font-family: var(--Abel);
+  font-size: 1.3rem;
+}
+
+button.btn {
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+span {
+  font-family: var(--Abel);
+}
+
+.container {
+  margin: 0 5vw;
+}
+
+.text-gray {
+  color: var(--text-gray);
+}
+
+p {
+  font-family: var(--Lexend);
+  color: var(--text-light);
+}
+
+/* ------x------- Global Classes -------x-------*/
+
+/* --------------- navbar ----------------- */
+
+.top-nav {
+  width: 100vw;
+  height: auto;
+  background: #1d1d1d;
+  display: inline-block;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.top-nav p {
+  color: whitesmoke;
+  font-family: 'Arimo';
+  text-align: center;
+  letter-spacing: 10px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.nav {
+  background: rgb(253, 253, 253);
+  padding: 0 3rem;
+  height: 10rem;
+  max-height: 7vh;
+  overflow: hidden;
+  transition: height 1s ease-in-out;
+  /* border-bottom: 1px solid #313131; */
+}
+
+.nav .nav-menu {
+  justify-content: space-between;
+}
+
+.nav .toggle-collapse {
+  position: absolute;
+  top: 0%;
+  width: 10% !important;
+  cursor: pointer;
+  display: none;
+  margin-left: 260px !important;
+  background: blue;
+  
+}
+
+.nav .toggle-collapse .toggle-icons {
+  display: flex;
+  float: right;
+  width: 10%;
+  justify-content: flex-end;
+  padding: 1.3rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons .fas {
+  font-size: 1.6rem;
+  color: #1d1d1d;
+}
+
+.collapse {
+  height: 30rem;
+}
+
+.nav .nav-items {
+  display: flex;
+  margin: 0;
+  margin-left: -78px;
+}
+
+.nav .nav-items .nav-link {
+  padding: 17px 20px;
+  font-size: 11px;
+  position: relative;
+  font-family: "Arimo";
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.nav .nav-items .nav-link:hover {
+  /* background: #1d1d1d; */
+  height: 1.2rem;
+}
+
+.nav .nav-items .nav-link a {
+  color: black;
+}
+
+.nav .nav-items .nav-link:hover a {
+  color: rgb(196, 194, 194);
+
+}
+
+.nav .nav-brand a {
+  margin: 0px 0px;
+  padding: 3px 10px;
+  display: block;
+  font-family: "Bebas Neue Book";
+  font-size: 35px;
+  color: black;
+  /* background: rgb(0, 172, 238);
+  background: linear-gradient(
+    0deg,
+    rgb(160, 219, 243) 0%,
+    rgb(7, 108, 209) 100%
+  ); */
+  /* background: #1d1d1d; */
+  /* background: linear-gradient(0deg, rgb(107, 107, 107) 0%, #1d1d1d 100%); */
+}
+
+.nav .social {
+  padding: 12px 0;
+}
+
+.nav .social i {
+  padding: 3px 5px;
+  /* border: 1px solid rgb(31, 30, 30); */
+  margin-left: 8px;
+  color: #1d1d1d;
+}
+
+.nav .social i:hover {
+  background: #1d1d1d;
+  color: white;
+}
+
+/* -------x------- navbar ---------x------- */
+
+/* ----------------- Main Content----------- */
+
+/* --------------- Site title ---------------- */
+main .site-title {
+  background: url("https://images5.alphacoders.com/413/413603.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-attachment: fixed;
+  transition: 0.5s ease;
+}
+
+main .site-title .site-background {
+  padding-top: 10rem;
+  text-align: center;
+  color: var(--white);
+}
+
+main .site-title h1,
+h3 {
+  margin: 0.3rem;
+}
+
+main .site-title .site-background h1 {
+  /* font-family: var(--Abel); */
+  font-family: "Bebas Neue Light", cursive;
+  font-weight: 500;
+  font-size: 100px;
+  text-transform: uppercase;
+  letter-spacing: 28px;
+  background: #161616;
+  padding: 2px 100px;
+  color: whitesmoke;
+}
+
+main .site-title .site-background p {
+  font-family: "Bebas Neue Book", cursive;
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 12px;
+  color: whitesmoke;
+}
+
+.title-hr {
+  width: 50%;
+}
+
+main .site-title .btn {
+  margin-top: 30px;
+  /* background: rgb(0, 172, 238);
+  background: linear-gradient(
+    0deg,
+    rgb(160, 219, 243) 0%,
+    rgb(7, 108, 209) 100%
+  ); */
+  background-color: rgba(255, 255, 255, 0.904);
+  transition: 0.4s ease-in-out;
+  outline: none;
+  border-radius: 0px;
+}
+
+main .site-title .btn:hover {
+  background: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+
+main .site-title .btn span {
+  font-family: "Arimo";
+  letter-spacing: 4px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+/* --------x------ Site title --------x------- */
+
+/* --------------- Blog Carousel ------------ */
+
+main .blog {
+  background: #1d1d1d;
+  height: 110vh;
+  width: 100%;
+  margin-top: -79px;
+  padding-bottom: 60px;
+}
+
+main .blog h1 {
+  /* color: #242935; */
+  color: whitesmoke;
+  font-family: "Bebas Neue Light", cursive;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 95px;
+  letter-spacing: 3px;
+  text-align: center;
+  padding-top: 60px;
+}
+
+main .blog h3 {
+  color: whitesmoke;
+  font-family: "Arimo", cursive;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-top: -40px;
+}
+
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next {
+  color: var(--text-gray);
+  background: transparent;
+  font-size: 2rem;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: transparent;
+  opacity: 0.6;
+}
+
+.owl-theme .owl-nav [class*="owl-"] {
+  outline: none;
+  color: whitesmoke;
+}
+
+.blog .portfolio-gallery {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.blog .portfolio-gallery .item {
+  background-color: white;
+  flex: 0 0 calc(25% - 0px);
+  max-width: calc(25% - 0px);
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.blog .portfolio-gallery .item img {
+  width: 100%;
+  display: block;
+  /* object-fit: auto; */
+}
+
+.blog .portfolio-gallery .item .overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 10;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.blog .portfolio-gallery .item:hover .overlay {
+  opacity: 1;
+}
+
+.blog .portfolio-gallery .item .overlay .btn-2 {
+  background: black;
+  border: 1px solid whitesmoke;
+  padding: 8px 20px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.blog .portfolio-gallery .item .overlay .btn-2:hover {
+  background: #1d1d1d;
+}
+
+.blog .portfolio-gallery .item .overlay .btn-2 span {
+  font-family: var(--Abel);
+  font-size: 12px;
+  font-weight: 500;
+  color: whitesmoke;
+  letter-spacing: 3px;
+}
+
+.blog .portfolio-gallery .item:hover .overlay .btn-2 {
+  -webkit-animation: galleryText 0.9s ease;
+  animation: galleryIcon 0.9s ease;
+}
+
+.blog .portfolio-gallery .item .overlay h4 {
+  margin-top: 15px;
+  font-size: 30px;
+  color: whitesmoke;
+  font-family: "Bebas Neue Book";
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.blog .portfolio-gallery .item:hover .overlay h4 {
+  -webkit-animation: galleryText 0.8s ease;
+  animation: galleryText 0.8s ease;
+}
+
+@keyframes galleryText {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes galleryIcon {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* -------x------- Blog Carousel -----x------ */
+
+/* ---------------- Site Content ----------------*/
+
+main .container {
+  /* margin-top: -20px; */
+}
+
+main .site-content {
+  display: grid;
+  grid-template-columns: 100% 30%;
+  margin-top: 0px;
+  height: 120vh;
+}
+
+main .posts h1 {
+  color: #1d1d1d;
+  font-family: "Bebas Neue Book", cursive;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 95px;
+  letter-spacing: 3px;
+  text-align: center;
+  padding-top: 60px;
+  text-align: center;
+}
+
+main .post-content {
+  width: 100%;
+  text-align: center;
+}
+
+main .post-content .post-image img {
+  filter: grayscale(70%);
+  margin-bottom: 30px;
+  width: 40%;
+  margin-top: -40px;
+}
+
+main .site-content .post-content > .post-image .post-info span {
+  /* margin: 0 0.5rem; */
+}
+
+main .post-content .post-title a {
+  font-family: "Arimo", cursive;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 6px;
+  text-align: center;
+  color: #1d1d1d;
+}
+
+.site-content .post-content .post-title .post-btn {
+  border-radius: 0;
+  padding: 0.7rem 1.5rem;
+  background: #1d1d1d;
+  color: white;
+  transition: 0.3s ease;
+  margin-top: 20px;
+}
+
+.site-content .post-content .post-title .post-btn:hover {
+  border: 1px solid #1d1d1d !important;
+  background: whitesmoke;
+  color: #1d1d1d;
+}
+
+/* -------x-------- Site Content --------x-------*/
+
+/* About */
+
+.about {
+  background-image: url("https://lnovum.com/wp-content/uploads/2018/11/About-Bg-1-e1555969458693.jpg");
+  background-repeat: no-repeat;
+  background-color: #f6f6f7;
+  background-size: cover;
+  height: 110vh;
+  text-align: center;
+  background-attachment: fixed;
+}
+
+.about h1 {
+  color: #1d1d1d;
+  font-family: "Bebas Neue Book", cursive;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 95px;
+  letter-spacing: 3px;
+  text-align: center;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.about p {
+  font-family: "Arimo", cursive;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 5px;
+  color: #1d1d1d;
+  margin-bottom: 30px;
+  margin-top: -40px;
+}
+
+.about .img {
+  flex: 0 0 100%;
+  max-width: 100%;
+  height: 20em;
+}
+
+.about .img img {
+  width: 25%;
+  border-radius: 50%;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.9);
+}
+
+/* ---------x------- Main Content -----x----- */
+
+/* ----------------- Footer --------------------- */
+
+footer.footer {
+  height: 100%;
+  background: var(--bg-color);
+  position: relative;
+}
+
+footer.footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+footer.footer .container > div {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 3rem 0.9rem;
+}
+
+footer.footer .container h2 {
+  color: var(--white);
+}
+
+footer.footer .newsletter .form-element {
+  background: black;
+  display: inline-block;
+}
+
+footer.footer .newsletter .form-element input {
+  padding: 0.5rem 0.7rem;
+  border: none;
+  background: transparent;
+  color: white;
+  font-family: var(--Josefin);
+  font-size: 1rem;
+  width: 74%;
+}
+
+footer.footer .newsletter .form-element span {
+  background: var(--sky);
+  padding: 0.5rem 0.7rem;
+  cursor: pointer;
+}
+
+footer.footer .instagram div > img {
+  display: inline-block;
+  width: 25%;
+  height: 50%;
+  margin: 0.3rem 0.4rem;
+}
+
+footer.footer .follow div i {
+  color: var(--white);
+  padding: 0 0.4rem;
+}
+
+footer.footer .rights {
+  justify-content: center;
+  font-family: var(--Josefin);
+}
+
+footer.footer .rights h4 a {
+  color: var(--white);
+}
+
+footer.footer .move-up {
+  position: absolute;
+  right: 3%;
+  top: 84%;
+  position: fixed;
+}
+
+footer.footer .move-up span {
+  color: rgb(94, 93, 93);
+}
+
+footer.footer .move-up span:hover {
+  color: white;
+  cursor: pointer;
+}
+
+/* ---------x------- Footer ----------x---------- */
+
+/* Blog Page */
+
+main .site-title-blog {
+  background: url("https://i.pinimg.com/originals/e2/2f/36/e22f36477ae0feaa9a98d78b33c52cb0.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+}
+
+main .site-title-blog .site-background h1 {
+  color: white;
+  font-size: 150px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: "The Skinny";
+  text-transform: uppercase;
+  margin-top: 70px;
+  text-shadow: 2px 2px black;
+}
+
+/* Blog List */
+
+.blog_list {
+  display: flex;
+  margin: 40px;
+}
+
+.blog_image {
+  object-fit: contain;
+  width: 320px;
+  height: 320px;
+  padding-left: 40px;
+}
+
+.blog_info {
+  padding-left: 40px;
+}
+
+.blog_title {
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 61px;
+  font-family: var(--Abel);
+  color: rgb(100, 99, 99);
+}
+
+.blog_date {
+  font-size: 16px;
+  font-family: var(--Abel);
+  color: rgb(180, 180, 180);
+  margin-top: -20px;
+}
+
+.blog_text {
+  margin-right: 20px;
+  font-family: var(--Abel);
+  font-size: 17px;
+}
+
+.blog_button {
+  color: white;
+  background-color: rgb(39, 38, 38);
+  border: none;
+  padding: 8px;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.blog_button:hover {
+  opacity: 0.8;
+}
+
+hr {
+  width: 88%;
+}
+
+/* Article Page */
+
+.article {
+  margin: 80px 80px;
+}
+
+.article-header {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.article-header h1 {
+  line-height: .2;
+  font-family: 'Bebas Neue Book';
+  font-size: 60px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+
+.article-header p {
+  font-family: 'Bebas Neue Book';
+  font-size: 22px;
+  color: rgb(99, 98, 98);
+}
+
+.article-header h3 {
+  font-family: 'Bebas Neue Book';
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+
+.article-section p {
+  margin-top: 50px;
+  text-indent: 4%;
+  line-height: 2;
+  color: #3f3f3f;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/*              Viewport less then or equal to 1130px            */
+
+@media only screen and (max-width: 1130px) {
+  .site-content .post-content > .post-image .post-info {
+    left: 2rem !important;
+    bottom: 1.2rem !important;
+    border-radius: 0% !important;
+  }
+
+  .site-content .sidebar .popular-post .post-info {
+    display: none !important;
+  }
+
+  footer.footer .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*      x       Viewport less then or equal to 1130px    x     */
+
+@media only screen and (max-width: 1026px) {
+  .nav {
+    background: white;
+    padding: 0 3rem;
+    height: 4rem;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+  }
+
+  .collapse {
+    height: 50vh;
+  }
+
+  .nav .nav-items {
+    display: flex;
+    margin: 0;
+    margin-left: -60px;
+  }
+
+  .nav .nav-brand a {
+    margin: 10px 0px;
+    float: left;
+    display: block;
+    font-family: var(--The_Skinny);
+    letter-spacing: 1px;
+    font-size: 30px;
+    color: white;
+    background: #1d1d1d;
+    background: linear-gradient(0deg, rgb(185, 185, 185) 0%, #1d1d1d 100%);
+  }
+
+.nav .nav-items .nav-link {
+  padding: 27px 20px;
+  font-size: 11px;
+  position: relative;
+  font-family: "Arimo";
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.nav .social i {
+  padding: 12px 5px;
+  /* border: 1px solid rgb(31, 30, 30); */
+  margin-left: 8px;
+  color: rgb(31, 30, 30);
+}
+
+
+  main .site-title {
+    background: url("https://wallup.net/wp-content/uploads/2015/12/114781-landscape-triangle-polyscape.jpg")
+      center center;
+    background-size: auto 860px;
+    height: 850px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+  }
+
+  main .site-title .site-background h1 {
+    margin-top: 20%;
+    font-family: "Bebas Neue Light", cursive;
+    font-weight: 500;
+    font-size: 55px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background: #1d1d1d;
+    padding: 5px 10px;
+    color: whitesmoke;
+  }
+
+  main .site-title .btn {
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.904);
+    transition: 0.4s ease-in-out;
+    outline: none;
+    border-radius: 0px;
+  }
+
+  main .site-title .btn:hover {
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+  }
+
+  main .site-title .btn span {
+    font-family: "Arimo";
+    letter-spacing: 4px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  main .blog {
+    display: inline-block;
+    height: auto;
+    padding-bottom: 60px;
+  }
+
+  main .blog-post .blog-content img {
+    width: 100%;
+    height: 15vh;
+    object-fit: cover;
+  }
+
+  .blog .portfolio-gallery .item {
+    background-color: white;
+    flex: 0 0 calc(50% - 0px);
+    max-width: calc(50% - 0px);
+    margin-bottom: 16px;
+    position: relative;
+  }
+
+  .blog .portfolio-gallery .item img {
+    width: 100%;
+    display: block;
+  }
+
+  .blog .portfolio-gallery .item .overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 10;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+
+  .blog .portfolio-gallery .item:hover .overlay {
+    opacity: 1;
+  }
+
+  .blog .portfolio-gallery .item .overlay .btn-2 {
+    background: white;
+    border: 1px solid black;
+    padding: 3px 20px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .blog .portfolio-gallery .item .overlay .btn-2:hover {
+    background: rgb(197, 197, 197);
+  }
+
+  .blog .portfolio-gallery .item .overlay .btn-2 span {
+    font-family: "Bebas Neue Book";
+    font-size: 10px;
+    font-weight: 600;
+    color: black;
+    letter-spacing: 2px;
+  }
+
+  .blog .portfolio-gallery .item:hover .overlay .btn-2 {
+    -webkit-animation: galleryText 0.9s ease;
+    animation: galleryIcon 0.9s ease;
+  }
+
+  .blog .portfolio-gallery .item .overlay h4 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: whitesmoke;
+    font-family: "Bebas Neue Book";
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .blog .portfolio-gallery .item:hover .overlay h4 {
+    -webkit-animation: galleryText 0.8s ease;
+    animation: galleryText 0.8s ease;
+  }
+
+  /* Article Page */
+  main .site-title-blog {
+  background: url("https://i.pinimg.com/originals/e2/2f/36/e22f36477ae0feaa9a98d78b33c52cb0.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+}
+
+main .site-title-blog .site-background h1 {
+  color: white;
+  font-size: 150px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: "The Skinny";
+  text-transform: uppercase;
+  margin-top: 70px;
+  text-shadow: 2px 2px black;
+}
+}
+
+/*              Viewport less then or equal to 750px            */
+
+@media only screen and (max-width: 768px) {
+ 
+  .top-nav {
+    display:none;
+  }
+
+  main .site-title {
+    background: url("https://wallup.net/wp-content/uploads/2015/12/114781-landscape-triangle-polyscape.jpg")
+      center center;
+    background-size: cover;
+    height: 60vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav {
+    background: white;
+    padding: 0 3rem;
+    height: 5rem;
+    max-height: 100vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+  }
+
+  .collapse {
+    height: 70vh;
+  }
+
+  .nav .nav-menu,
+  .nav .nav-items {
+    flex-direction: column;
+  }
+
+  .nav .nav-items {
+    text-align: center;
+    margin-right: -13px;
+  }
+
+  .nav .nav-brand a {
+    margin-top: 15px;
+    padding: 10px 10px;
+    float: left;
+    display: block;
+    font-family: var(--The_Skinny);
+    letter-spacing: 1px;
+    font-size: 25px;
+    color: white;
+    background: #1d1d1d;
+    background: linear-gradient(0deg, rgb(185, 185, 185) 0%, #1d1d1d 100%);
+  }
+
+  .nav-items .nav-link {
+    border-bottom: 1px solid lightgray;
+  }
+
+  .nav-items .nav-link a {
+    font-size: 17px;
+  }
+
+  .nav .social {
+    text-align: center;
+  }
+
+  .nav .social a {
+    padding: 0px 10px;
+    font-size: 25px;
+  }
+
+  .nav .toggle-collapse {
+    display: initial;
+  }
+
+  .nav .toggle-collapse .toggle-icons i {
+    font-size: 2.3rem;
+    color: var(--midnight);
+  }
+
+  main .blog {
+    height: auto;
+    padding-bottom: 40px;
+    display: inline-block;
+  }
+
+  main .site-title .site-background h1 {
+    margin-top: 10%;
+    font-family: "Bebas Neue Book", cursive;
+    font-weight: 500;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background: #1d1d1d;
+    padding: 5px 10px;
+    color: whitesmoke;
+    text-align: center;
+  }
+
+  main .site-title .site-background .btn {
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.904);
+    transition: 0.4s ease-in-out;
+    outline: none;
+    border-radius: 0px;
+    padding: 8px 25px;
+  }
+
+  main .site-title .btn:hover {
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+  }
+
+  main .site-title .btn span {
+    font-family: "Arimo";
+    letter-spacing: 4px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .blog .portfolio-gallery .item {
+    background-color: white;
+    flex: 0 0 calc(50% - 0px);
+    max-width: calc(50% - 0px);
+    margin-bottom: 16px;
+    position: relative;
+  }
+
+  .blog .portfolio-gallery .item img {
+    width: 100%;
+    display: block;
+  }
+
+  .blog .portfolio-gallery .item .overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 10;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+
+  .blog .portfolio-gallery .item:hover .overlay {
+    opacity: 1;
+  }
+
+  .blog .portfolio-gallery .item .overlay .btn-2 {
+    background: white;
+    border: 1px solid black;
+    padding: 3px 20px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .blog .portfolio-gallery .item .overlay .btn-2:hover {
+    background: rgb(197, 197, 197);
+  }
+
+  .blog .portfolio-gallery .item .overlay .btn-2 span {
+    font-family: "Bebas Neue Book";
+    font-size: 10px;
+    font-weight: 600;
+    color: black;
+    letter-spacing: 2px;
+  }
+
+  .blog .portfolio-gallery .item:hover .overlay .btn-2 {
+    -webkit-animation: galleryText 0.9s ease;
+    animation: galleryIcon 0.9s ease;
+  }
+
+  .blog .portfolio-gallery .item .overlay h4 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: whitesmoke;
+    font-family: "Bebas Neue Book";
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .blog .portfolio-gallery .item:hover .overlay h4 {
+    -webkit-animation: galleryText 0.8s ease;
+    animation: galleryText 0.8s ease;
+  }
+
+  /* Honey Drops */
+
+  main .site-content {
+  display: grid;
+  grid-template-columns: 100% 30%;
+  margin-top: 0px;
+  height: 80vh;
+}
+
+main .post-content .post-image img {
+  filter: grayscale(70%);
+  margin-bottom: 30px;
+  width: 60%;
+  margin-top: -40px;
+}
+
+/* About */
+
+.about {
+  background-image: url("https://lnovum.com/wp-content/uploads/2018/11/About-Bg-1-e1555969458693.jpg");
+  background-repeat: no-repeat;
+  background-color: #f6f6f7;
+  background-size: cover;
+  height: 80vh;
+  text-align: center;
+  background-attachment: fixed;
+}
+
+.about h1 {
+  color: #1d1d1d;
+  font-family: "Bebas Neue Book", cursive;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 95px;
+  letter-spacing: 3px;
+  text-align: center;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.about p {
+  font-family: "Arimo", cursive;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 5px;
+  color: #1d1d1d;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  margin-top: -40px;
+}
+
+.about .img {
+  flex: 0 0 100%;
+  max-width: 100%;
+  height: 20em;
+}
+
+.about .img img {
+  width: 45%;
+  border-radius: 50%;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.9);
+}
+
+
+  footer.footer .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  main .site-title-blog {
+    background: url("https://i.pinimg.com/originals/e2/2f/36/e22f36477ae0feaa9a98d78b33c52cb0.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    margin-top: -90px;
+  }
+
+  main .site-title-blog .site-background h1 {
+    color: white;
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: var(--The_Skinny);
+    text-transform: uppercase;
+    margin-top: 120px;
+    text-shadow: 2px 4px black;
+  }
+}
+
+/*        x      Viewport less then or equal to 750px       x     */
+
+/*              Viewport less then or equal to 520px            */
+
+@media only screen and (max-width: 520px) {
+
+  .top-nav {
+    display:none;
+  }
+
+  .nav {
+    background: white;
+    padding: 0 3rem;
+    height: 4rem;
+    max-height: 100vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+  }
+
+  .collapse {
+    height: 110vh;
+  }
+
+  .nav .nav-brand a {
+    margin-top: 18px;
+    margin-left: -30px;
+    float: left;
+    padding: 6px 10px;
+    display: block;
+    font-family: var(--The_Skinny);
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: white;
+    background: #1d1d1d;
+    background: linear-gradient(0deg, rgb(185, 185, 185) 0%, #1d1d1d 100%);
+  }
+
+  .nav .nav-items {
+    display: flex;
+    margin: 0;
+    margin-left: -40px;
+  }
+
+  .nav-items .nav-link {
+    border-bottom: 1px solid lightgray;
+  }
+
+  .nav-items .nav-link a {
+    font-size: 12px;
+  }
+
+  .nav .social a {
+    padding: 5px 18px;
+    font-size: 18px;
+  }
+
+  .nav .toggle-collapse .toggle-icons i {
+    font-size: 1.7rem;
+    color: var(--text-gray);
+    cursor: pointer;
+  }
+
+  main .site-title {
+    background: url("https://wallup.net/wp-content/uploads/2015/12/114781-landscape-triangle-polyscape.jpg")
+      center center;
+    background-size: 570px 500px;
+    height: 500px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+  }
+
+  main .site-title .site-background h1 {
+    margin-top: 30px;
+    margin-right: 12px;
+    margin-left: 12px;
+    font-family: "Bebas Neue Book", cursive;
+    font-weight: 500;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background: #1d1d1d;
+    padding: 5px 10px;
+    color: whitesmoke;
+    text-align: center;
+  }
+
+  main .site-title .site-background .btn {
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.904);
+    transition: 0.4s ease-in-out;
+    outline: none;
+    border-radius: 0px;
+    padding: 8px 18px;
+  }
+
+  main .site-title .btn:hover {
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+  }
+
+  main .site-title .btn span {
+    font-family: "Arimo";
+    letter-spacing: 4px;
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  main .blog {
+    height: auto;
+    text-align: center;
+  }
+
+  main .blog h1 {
+    /* color: #242935; */
+    color: whitesmoke;
+    font-family: "Bebas Neue Light", cursive;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 44px;
+    letter-spacing: 3px;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  main .blog h3 {
+    color: whitesmoke;
+    font-family: "Arimo", cursive;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top: -20px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  main .blog-post .blog-content img {
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+  }
+
+  .site-content .post-content > .post-image .post-info {
+    display: none;
+  }
+
+  footer.footer .container > div {
+    padding: 1rem 0.9rem !important;
+  }
+
+  footer .rights {
+    padding: 0 1.4rem;
+    text-align: center;
+  }
+
+  nav .toggle-collapse {
+    width: 80% !important;
+  }
+
+  .blog .portfolio-gallery .item {
+    background-color: white;
+    flex: 0 0 calc(50% - 0px);
+    max-width: calc(50% - 0px);
+    margin-bottom: 16px;
+    position: relative;
+  }
+
+  .blog .portfolio-gallery .item img {
+    width: 100%;
+    display: block;
+  }
+
+  .blog .portfolio-gallery .item .overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 10;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+
+  .blog .portfolio-gallery .item:hover .overlay {
+    opacity: 1;
+  }
+
+  .blog .portfolio-gallery .item .overlay .btn-2 {
+    background: white;
+    border: 1px solid black;
+    padding: 3px 20px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .blog .portfolio-gallery .item .overlay .btn-2:hover {
+    background: rgb(197, 197, 197);
+  }
+
+  .blog .portfolio-gallery .item .overlay .btn-2 span {
+    font-family: "Bebas Neue Book";
+    font-size: 10px;
+    font-weight: 600;
+    color: black;
+    letter-spacing: 2px;
+  }
+
+  .blog .portfolio-gallery .item:hover .overlay .btn-2 {
+    -webkit-animation: galleryText 0.9s ease;
+    animation: galleryIcon 0.9s ease;
+  }
+
+  .blog .portfolio-gallery .item .overlay h4 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: whitesmoke;
+    font-family: "Bebas Neue Book";
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .blog .portfolio-gallery .item:hover .overlay h4 {
+    -webkit-animation: galleryText 0.8s ease;
+    animation: galleryText 0.8s ease;
+  }
+
+  /* Honey Drops */
+
+  main .container {
+  margin-top: -20px;
+}
+
+main .site-content {
+  display: grid;
+  grid-template-columns: 100% 30%;
+  margin-top: 0px;
+  height: auto;
+}
+
+main .posts h1 {
+  color: #1d1d1d;
+  font-family: "Bebas Neue Book", cursive;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 55px;
+  letter-spacing: 3px;
+  text-align: center;
+  padding-top: 60px;
+  text-align: center;
+}
+
+main .post-content {
+  width: 100%;
+  text-align: center;
+}
+
+main .post-content .post-image img {
+  filter: grayscale(70%);
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+main .site-content .post-content > .post-image .post-info span {
+  /* margin: 0 0.5rem; */
+}
+
+main .post-content .post-title a {
+  font-family: "Arimo", cursive;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 6px;
+  text-align: center;
+  color: #1d1d1d;
+}
+
+.site-content .post-content .post-title .post-btn {
+  border-radius: 0;
+  padding: 0.7rem 1.5rem;
+  background: #1d1d1d;
+  color: white;
+  transition: 0.3s ease;
+  margin-top: 20px;
+}
+
+.site-content .post-content .post-title .post-btn:hover {
+  border: 1px solid #1d1d1d !important;
+  background: whitesmoke;
+  color: #1d1d1d;
+}
+
+/* About */
+
+.about {
+  background-image: url("https://lnovum.com/wp-content/uploads/2018/11/About-Bg-1-e1555969458693.jpg");
+  background-repeat: no-repeat;
+  background-color: #f6f6f7;
+  background-size: cover;
+  height: 110vh;
+  text-align: center;
+  background-attachment: fixed;
+}
+
+.about h1 {
+  color: #1d1d1d;
+  font-family: "Bebas Neue Book", cursive;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 65px;
+  letter-spacing: 3px;
+  text-align: center;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.about p {
+  font-family: "Arimo", cursive;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 6px;
+  color: #1d1d1d;
+  margin-bottom: 30px;
+  margin-top: -40px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.about .img {
+  flex: 0 0 100%;
+  max-width: 100%;
+  height: 20em;
+}
+
+.about .img img {
+  width: 65%;
+  border-radius: 50%;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.9);
+}
+
+/* Article Page */
+.blog_list {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 10px 10px;
+}
+
+.blog_image {
+  object-fit: contain;
+  width: 250px;
+  height: 300px;
+  margin-bottom: -80px;
+}
+
+.blog-info {
+  text-align: left;
+  padding-left: 0;
+}
+
+.blog_title {
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 61px;
+  font-family: var(--Abel);
+  color: rgb(100, 99, 99);
+}
+
+.blog_date {
+  font-size: 16px;
+  font-family: var(--Abel);
+  color: rgb(180, 180, 180);
+  margin-top: -20px;
+}
+
+.blog_text {
+  margin-right: 20px;
+  font-family: var(--Abel);
+  font-size: 17px;
+}
+
+.blog_button {
+  color: white;
+  background-color: rgb(39, 38, 38);
+  border: none;
+  padding: 8px;
+  margin-bottom: 40px;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* Article Page */
+
+.article {
+  margin: 40px 25px;
+}
+
+.article-header {
+  margin-top: 70px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.article-header h1 {
+  line-height: .2;
+  font-family: 'Bebas Neue Book';
+  font-size: 30px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+
+.article-header p {
+  font-family: 'Bebas Neue Book';
+  font-size: 18px;
+  color: rgb(99, 98, 98);
+}
+
+.article-header h3 {
+  font-family: 'Bebas Neue Book';
+  font-size: 18px;
+  letter-spacing: 5px;
+}
+
+.article-section p {
+  margin-top: 50px;
+  text-indent: 4%;
+  line-height: 2;
+  color: #3f3f3f;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+}
+
+/*        x      Viewport less then or equal to 520px       x     */

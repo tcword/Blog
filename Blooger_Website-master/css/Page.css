@@ -1,0 +1,129 @@
+@import url("../css/fonts.css");
+@import url('http://fonts.cdnfonts.com/css/kaushan-script');
+
+
+
+
+
+:root {
+  /*      Theme colors        */
+  --text-gray: #3f4954;
+  --text-light: #686666da;
+  --bg-color: #0f0f0f;
+  --white: #ffffff;
+  --midnight: #104f55;
+
+  /* gradient color   */
+  --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+  /*      theme font-family   */
+  --Abel: "Abel", cursive;
+  --Anton: "Anton", cursive;
+  --Josefin: "Josefin", cursive;
+  --Lexend: "Lexend", cursive;
+  --Livvic: "Livvic", cursive;
+}
+
+html,
+body {
+  margin: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Banner */
+
+ .site-title {
+  background: url("../OEAH.jpg");
+  background-size: cover;
+  background-position: center bottom -100px;
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  margin-top: -90px;
+}
+
+main .site-title .site-background {
+  padding-top: 10rem;
+  text-align: center;
+  color: var(--white);
+}
+
+main .site-title h1 {
+  margin: 0.3rem;
+}
+
+/* .middle_banner {
+    background-image: url('https://i.pinimg.com/originals/5e/48/dc/5e48dc8f78b6bc6351533358ec3d0bbf.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    text-align: center;
+}
+
+.middle_banner h2 {
+    color: white;
+    padding: 42px 0px;
+    font-size: 140px;
+    font-family: "Kaushan Script";
+} */
+
+/* Blog List */
+
+.blog_list {
+    display: flex;
+    margin: 40px;
+}
+
+.blog_image {
+    object-fit: contain;
+    width: 320px;
+    height: 320px;
+    padding-left: 40px;
+}
+
+.blog_info {
+    padding-left: 40px;
+}
+
+.blog_title {
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 61px;
+    font-family: var(--Abel);
+    color: rgb(100, 99, 99);
+}
+
+.blog_date {
+    font-size: 16px;
+    font-family: var(--Abel);
+    color: rgb(180, 180, 180);
+    margin-top: -20px;
+}
+
+.blog_text {
+    margin-right: 20px;
+    font-family: var(--Abel);
+    font-size: 17px;
+}
+
+.blog_button {
+    color: white;
+    background-color: rgb(39, 38, 38);
+    border: none;
+    padding: 8px;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    transition: 0.3s ease-in-out;
+}
+
+.blog_button:hover {
+    opacity: 0.8;
+}
+
+hr {
+    width: 88%;
+}
